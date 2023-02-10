@@ -1,0 +1,7 @@
+trait Duck {
+    
+}
+
+fn main() {
+
+}
