@@ -5,7 +5,7 @@ trait Authors {
 struct Paper {
     title: String,
     authors: Vec<String>,
-    doc_id: String
+    doc_id: String,
 }
 
 impl Authors for Paper {
@@ -17,7 +17,7 @@ impl Authors for Paper {
 struct Book {
     name: String,
     authors: Vec<String>,
-    publisher: String
+    publisher: String,
 }
 
 impl Authors for Book {
@@ -26,7 +26,28 @@ impl Authors for Book {
     }
 }
 
-fn get_Authors(x: i32) -> Box<dyn Authors> {
+// fn get_authors(x: i32) -> impl Authors {
+//     let paper = Paper {
+//         title: String::from("Paper Title"),
+//         authors: vec![String::from("a")],
+//         doc_id: String::from("1")
+//     };
+
+//     let book = Book {
+//         name: String::from("ProgrammingInRust"),
+//         authors: vec![String::from("b")],
+//         publisher: String::from("c")
+//     };
+
+//     if x == 1 {
+//         return paper;
+//     }
+//     else {
+//         return book;
+//     };
+// }
+
+fn get_boxed_authors(x: i32) -> Box<dyn Authors> {
     let paper = Paper {
         title: String::from("Paper Title"),
         authors: vec![String::from("a")],
@@ -47,6 +68,6 @@ fn get_Authors(x: i32) -> Box<dyn Authors> {
     };
 }
 fn main() {
-    println!("{:?}", get_Authors(1).get_authors());
-    println!("{:?}", get_Authors(2).get_authors());
+    println!("{:?}", get_boxed_authors(1).get_authors());
+    println!("{:?}", get_boxed_authors(2).get_authors());
 }
