@@ -6,3 +6,6 @@
 |trait		|trait		|
 |ownership	|所有权		|
 |panic		|panic		|
+|package	|包		|
+|crate		|crate		|
+|module	|模块		|
