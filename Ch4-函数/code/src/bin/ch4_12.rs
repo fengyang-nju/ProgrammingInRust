@@ -8,5 +8,5 @@ fn append(mut s1: &mut String) {
 fn main() {
     let mut s1 = String::from("ProgrammingIn");
     append(&mut s1);
-    println!("{}", s1);
+    assert_eq!(s1, String::from("ProgrammingInRust"));
 }
