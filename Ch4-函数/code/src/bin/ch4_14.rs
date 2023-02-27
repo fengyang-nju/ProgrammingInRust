@@ -1,5 +1,5 @@
-// 返回和最大的数组引用
-fn bigger_sum<'a>(v1: &'a [i32], v2: &'a [i32]) -> &'a [i32] {
+// 'a是'b的子集，即v1的生命周期比v2短
+fn bigger_sum<'a, 'b:'a>(v1: &'a [i32], v2: &'b [i32]) -> &'a [i32] {
     if v1.iter().sum::<i32>() > v2.iter().sum() {
         v1
     }
