@@ -12,3 +12,4 @@
 |Foreign Function Interface(FFI)  |外部函数接口|
 |Application Binary Interface(ABI)|应用程序二进制接口|
 |Closure  |闭包   |
+|Vec      |向量   |
