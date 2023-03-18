@@ -1,25 +1,16 @@
 fn main() {
-    let s1 = "ProgrammingInRust".to_string();
-    let s2 = "RustProgrammingLanguage".to_string();
+    let x = 1;
+    let mut i = 10;
 
-    let bigger_string = || {
-        s1.max(s2)
-    };
-    assert_eq!(
-        bigger_string(), 
-        "RustProgrammingLanguage".to_string()
-    );
+    let mut incr = |x| //--+
+        i += x;		 //  |
+//                       |	被捕获变量i的可变借用的非词法作用域
+    //error: cannot assign to i because it is borrowed
+    //i = 1;    		 |
+				//           |
+    incr(x);	//----------+
+    assert_eq!(i, 11);
 
-    // error: closure cannot be invoked more than once because
-    // it moves the variable `s1` out of its environment.
-    // assert_eq!(
-    //     max_string(), 
-    //     "RustProgrammingLanguage".to_string()
-    // );
-
-    // error: borrow of moved value "s1"
-    // println!("{:?}", s1);
-
-    // error: borrow of moved value "s2";
-    // s2.as_str();
+    i = 1; // ok
+    assert_eq!(i, 1);
 }

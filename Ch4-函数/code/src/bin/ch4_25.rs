@@ -1,19 +1,13 @@
 fn main() {
-    let mut i = 10;
+    let mut s = "ProgrammingInRust".to_string();
 
-    let mut incr_i = || {
-        i += 1;
-        i
+    let mut insert_rust_str = || {
+        s.insert_str(0, "Read ");
     };
 
-    assert_eq!(incr_i(), 11);
-    assert_eq!(i, 11);
-
-    let mut incr_i_move = move || {
-        i += 1;
-        i
-    };
-
-    assert_eq!(incr_i_move(), 12);
-    assert_eq!(i, 11);
+    insert_rust_str();
+    assert_eq!(
+        s, 
+        "Read ProgrammingInRust".to_string()
+    );
 }
