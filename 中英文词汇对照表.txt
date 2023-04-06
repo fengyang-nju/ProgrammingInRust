@@ -3,8 +3,23 @@
 
 |英文表述	    |   本书表述	 |
 |--------------|-------------|
-|trait		   |trait		 |
-|ownership	   |所有权		  |
-|panic		   |panic		 |
+|trait		|trait		|
+|ownership	|所有权		|
+|owner      |所有者     |
+|panic		|panic		|
+|package	|包		|
+|crate		|crate		|
+|module	  |模块		|
+|Foreign Function Interface(FFI)  |外部函数接口|
+|Application Binary Interface(ABI)|应用程序二进制接口|
+|Closure  |闭包   |
+|Vec      |向量   |
+|raw pointer  |原生指针    |
+|fat pointer  |胖指针      |
+|Reference Counting|引用计数  |
+|strong reference | 强引用  |
 |Deref Coercion|强制隐式转换  |
 |unwrap        |展开         |
+|interior mutability|内部可变性 |
+|exterior mutability|外部可变性 |
+|fully qualified syntax|完全限定语法  |
