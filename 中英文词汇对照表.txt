@@ -21,4 +21,4 @@
 |union      |联合       |
 |struct     |结构       |
 |lifetime   |生存期     |
-|raw point  |原生指针   |
+|raw pointer|原生指针   |
