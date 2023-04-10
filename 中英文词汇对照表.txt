@@ -7,7 +7,7 @@
 |ownership	|所有权		 |
 |panic		  |死错 		  |
 |package	  |程序包		 |
-|crate		  |库程序  	  |
+|crate		  |库程序  	 |
 |module	    |模块		    |
 |Foreign Function Interface(FFI)  |外部函数接口      |
 |Application Binary Interface(ABI)|应用程序二进制接口|
