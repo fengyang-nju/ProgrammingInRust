@@ -1,15 +1,18 @@
 # 《Rust语言程序设计》 编著词汇对照表
 
 
-|英文表述	| 本书表述	|
+|英文表述	  | 本书表述	|
 |-----------|-----------|
-|trait		|trait		|
-|ownership	|所有权		|
-|panic		|panic		|
-|package	|包		|
-|crate		|crate		|
-|module	  |模块		|
-|Foreign Function Interface(FFI)  |外部函数接口|
+|trait		  |特型 		  |
+|ownership	|所有权		 |
+|panic		  |死错 		  |
+|package	  |程序包		 |
+|crate		  |库程序  	  |
+|module	    |模块		    |
+|Foreign Function Interface(FFI)  |外部函数接口      |
 |Application Binary Interface(ABI)|应用程序二进制接口|
-|Closure  |闭包   |
-|Vec      |向量   |
+|Closure    |闭包       |
+|Vec        |向量       |
+|Never      |Never类型  |
+|Range      |范围       |
+|impl       |实现       |
