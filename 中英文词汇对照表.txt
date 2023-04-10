@@ -16,3 +16,7 @@
 |Never      |Never类型  |
 |Range      |范围       |
 |impl       |实现       |
+|unit       |单元类型   |
+|shadow     |隐匿       |
+|union      |联合       |
+|struct     |结构       |
