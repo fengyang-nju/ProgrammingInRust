@@ -20,3 +20,5 @@
 |shadow     |隐匿       |
 |union      |联合       |
 |struct     |结构       |
+|lifetime   |生存期     |
+|raw point  |原生指针   |
