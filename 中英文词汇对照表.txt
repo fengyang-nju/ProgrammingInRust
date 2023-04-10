@@ -22,3 +22,4 @@
 |struct     |结构       |
 |lifetime   |生存期     |
 |raw pointer|原生指针   |
+|arch       |字长      |
