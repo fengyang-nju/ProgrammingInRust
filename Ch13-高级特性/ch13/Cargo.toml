@@ -1,0 +1,18 @@
+[package]
+name = "ch13"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+smallvec = "1.10.0"
+indexmap = "1.9.2"
+regex = "1.8.4"
+csv = "=1.2.1"
+url = "2.3.1"
+unicode-segmentation = "1.1.1"
+tui = "0.19.0"
+regex-automata = "=0.1.0"
+hyper = "=0.14.26"
+ratatui = "=0.21.0"

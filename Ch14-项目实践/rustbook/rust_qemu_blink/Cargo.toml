@@ -1,0 +1,21 @@
+[package]
+authors = ["Author Name <author@example.com>"]
+name = "crate_name"
+version = "0.1.0"
+
+# 使用 `cargo build` 编译时需要的配置
+[profile.dev]
+panic = "abort" # 禁用panic时栈展开
+
+# 使用 `cargo build --release` 编译时需要的配置
+[profile.release]
+panic = "abort" # 禁用 panic 时栈展开
+
+[dependencies]
+bootloader = "0.9.25"
+spin = "0.5.2"
+volatile = "0.2.7"
+[dependencies.lazy_static]
+features = ["spin_no_std"]
+
+version = "1.0"
