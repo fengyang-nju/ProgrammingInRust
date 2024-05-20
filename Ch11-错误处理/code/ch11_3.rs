@@ -1,6 +1,6 @@
 fn main(){
-    //表示类型为int的值1
-    let some_int:Option<int> = Some(1);
+    //表示类型为i32的值1
+    let some_int:Option<i32> = Some(1);
     //表示类型char的值 a
     let _some_char:Option<char> = Some('a');
     //表示值缺失
